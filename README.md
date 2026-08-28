@@ -1,9 +1,11 @@
 # Unix/Git Tutorial
 
+<img align="right" src="img/meme.png" width="300"/>
+
 This tutorial will walk you through how basic unix and git commands work.
 It will prepare you to complete the first quiz in the class.
 
-You should complete this tutorial on the lambda server by typing all commands within code blocks into your terminal.
+You should complete this tutorial on the lambda server by typing all commands within code blocks into your terminal and verifying that you get the correct output.
 
 > **NOTE:**
 > There is a lot of material in these instructions related to git that we have not covered in class.
@@ -67,11 +69,19 @@ $ ls -l --full-time
 ```
 
 Notice how the timestamp in the first `ls` is different than the timestamp in the second `ls`.
-Now run the command
-```
-$ ls -l
-```
-Can you figure out what the `--full-time` flag did?
+
+> **NOTE:**
+> Run the command
+> ```
+> $ ls -l
+> ```
+> Notice that by default, `ls -l` only gives us minute-level accuracy on the timestamp.
+> We used `--full-time` to increase the accuracy above in order to be able to observe that the `touch` command changed the timestamp.
+> The `ls` command (and all other shell commands) have many options like this...
+> you can run `ls --help` to get the full list...
+> and nobody knows all of them.
+> You are only responsible for knowing the `-l` and `-a` flags for `ls`.
+> In practice, we use google/AI when we need to figure out a more complicated command line incantation.
 
 We've created our first file, but git doesn't know about it yet.
 Run the command:
