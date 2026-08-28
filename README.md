@@ -1,6 +1,6 @@
 # Unix/Git Tutorial
 
-<img align="right" src="img/meme.png" width="300"/>
+<img align="right" src="img/meme.png" width="200px"/>
 
 This tutorial will walk you through how basic unix and git commands work.
 It will prepare you to complete the first quiz in the class.
